@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React, { Component } from 'react';
 import { Link, Route } from 'react-router-dom';
 
 export class SignIn extends Component {
@@ -7,7 +7,14 @@ export class SignIn extends Component {
       <div>
         <h1>
           SignIn page
-    </h1>
+          <div>
+          <Link prefetch href="/home" to="/home">
+            <a>
+              Home page
+            </a>
+          </Link>
+          </div>
+        </h1>
       </div>
     );
   }
