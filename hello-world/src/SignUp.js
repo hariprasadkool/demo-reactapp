@@ -27,7 +27,7 @@ export class SignUp extends Component {
         }, 3000);
     }
 
-
+ 
     render() {
         return (
             <div>
@@ -41,24 +41,13 @@ export class SignUp extends Component {
                     <p><label for="first_published">Date of birth</label><input id="first_published" type="text" ref="YearReleased" /></p>
                     <p><input type="submit" /></p>
                 </form>
-                <Link to="/signin">Already registered login</Link>
-                <Route path="/signin" exact={true} render={()=>{
-                    (<Redirect to="/signin" />)
-                    }
-                }/>
 
-                {/* <Redirect
-                    to={{
-                        pathname: "/signin",
-                        
-                    }}
-                    /> */}
-                {/* <Link to="/signin">Already registered login</Link>
-                <Route
-                    path={'/signin'}
-                    exact={true}
-                    component={SignIn}
-                /> */}
+                    <Link prefetch href="/signin" to="/signin">
+                      <a>
+                        login
+                      </a>
+                    </Link>
+
             </div>
         );
     }
