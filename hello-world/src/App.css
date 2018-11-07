@@ -18,6 +18,15 @@
   color: white;
 }
 
+.button {
+  display: flex;
+  flex-direction: row;
+}
+
+.aligning {
+  display: flex
+}
+
 .App-link {
   color: #61dafb;
 }
